@@ -35,15 +35,16 @@ for (let i = 1; i <= 31; i++) {
 }
 
 // 6. Write a program to print 1 - 100 prime numbers.
-for (let num = 0; num <= 100; num++) {
+for (let i = 1; i <= 100; i++) {
 
-    let notPrime = false;
-    for (let i = 2; i <= num; i++) {
-        if (num % i === 0 && i !== num) {
-            notPrime = true;
+    let isPrime = true;
+
+    for (let j = 2; j < i; j++) {
+        if (i % j === 0 && i !== j) {
+            isPrime = false;
         }
     }
-    if (notPrime === false) {
-        console.log(num);
+    if (isPrime === true) {
+        console.log(i);
     }
 }
