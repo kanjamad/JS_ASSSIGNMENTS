@@ -40,7 +40,6 @@ switch(grade){
         break;
     default:
         text = " : Fail";
-        break;
 }
 document.getElementById("demo").innerHTML = grade + text;
 

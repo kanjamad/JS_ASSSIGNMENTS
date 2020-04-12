@@ -32,5 +32,4 @@ switch(speciaDish){
         break;
     default:
         alert("We serve Chicken Tenders");
-        break;
 }

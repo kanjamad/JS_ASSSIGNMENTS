@@ -39,7 +39,6 @@ switch (year){
     default:
         alert("Please enter year between 2003-2012.")
         text = " Please enter year between 2003-2012. ";
-        break;
 }
 
 document.getElementById("demo").innerHTML = year + text
