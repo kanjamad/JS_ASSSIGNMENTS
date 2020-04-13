@@ -212,7 +212,7 @@ console.log(alerNum(40));
 // alert ‘5’
 
 const alertNum = (num) => {
-    num = prompt('enter a number between One thru Five', 'One');
+    let num = prompt('enter a number between One thru Five', 'One');
     if (num === 'One' || num === 'one') {
         alert('1');
     } else if (num === 'Two' || num === 'two') {
@@ -233,7 +233,7 @@ const alertNum = (num) => {
 // else, 
 // please enter a valid number.
 
-num = prompt('enter a number Six to Ten');
+let num = prompt('enter a number Six to Ten');
 if (num < 6 || num > 10) {
     alert('please enter a proper number')
 } else {
@@ -241,5 +241,28 @@ if (num < 6 || num > 10) {
 }
 
 
-// 14. If I enter an even number, I want next 10 even numbers to be printed.If I enter an odd number, I want next 10 odd numbers to be printed.
-// 15. If I enter an even number, I want previous 5 even numbers to be printed.If I enter an odd number, I want previous 5 odd numbers to be printed.
+// 14. If I enter an even number, 
+// I want next 10 even numbers to be printed. 
+// If I enter an odd number, 
+// I want next 10 odd numbers to be printed.
+
+
+let num = prompt("Plese enter a number");
+let value = parseInt(num);
+for (let i = 1; i <= 10; i++) {
+    value = value + 2;
+    document.write(value + "<br>");
+}
+
+
+// 15. If I enter an even number, 
+// I want previous 5 even numbers to be printed. 
+// If I enter an odd number, 
+// I want previous 5 odd numbers to be printed.
+
+let value = prompt("Plese enter a number");
+value = parseInt(value);
+for (let i = 1; i <= 5; i = i + 1) {
+    value = value - 2;
+    document.write(value + "<br>");
+}
