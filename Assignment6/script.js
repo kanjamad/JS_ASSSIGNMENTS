@@ -389,4 +389,45 @@ if (val === 'Monday' || val === 'monday') {
 };
 
 // 9. Create an array, for every match, display an alert‘ match’.
+
+const ufc = ['Overeem','Ngannou','Woodley','Lee','Adesanya','Benavidez'];
+
+let inPut = prompt('Name one of UFC Fight Night');
+for (let i = 0; i < ufc.length; i++) {
+    if (ufc[0] === inPut) {
+        alert(inPut + '  vs. Harris');
+    } else if (ufc[1] === inPut) {
+        alert(inPut + '  vs. Rozenstruik');
+    } else if (ufc[2] === inPut) {
+        alert(inPut + '  vs. Edwards');
+    } else if (ufc[3] === inPut) {
+        alert(inPut + '  vs. Oliveira');
+    } else if (ufc[4] === inPut) {
+        alert(inPut + '  vs. Romero');
+    } else if (ufc[5] === inPut) {
+        alert(inPut + '  vs. Figueiredo');
+    }
+}
+
+
 // 10. Create two arrays, for every match between the 2 arrays, display an alert‘ there is a match’.
+
+https: //repl.it/@kanjamad/Ass610
+const team1 = ['Overeem', 'Ngannou', 'Woodley', 'Lee', 'Adesanya', 'Benavidez'];
+
+const team2 = ['Harris', 'Rozenstruik', 'Edwards', 'Oliveira', 'Romero', 'Figueiredo'];
+
+let inPut = prompt('Name one of UFC Fight Night');
+if (inPut === team1[0] || inPut === team2[0]) {
+    console.log('UFC Fight Night: Overeem vs. Harris');
+} else if (inPut === team1[1] || inPut === team2[1]) {
+    console.log('	UFC on ESPN: Ngannou vs. Rozenstruik');
+} else if (inPut === team1[2] || inPut === team2[2]) {
+    console.log('	UFC Fight Night: Woodley vs. Edwards');
+} else if (inPut === team1[3] || inPut === team2[3]) {
+    console.log('	UFC Fight Night: Lee vs. Oliveira');
+} else if (inPut === team1[4] || inPut === team2[4]) {
+    console.log('	UFC 248: Adesanya vs. Romero');
+} else if (inPut === team1[5] || inPut === team2[5]) {
+    console.log('	UFC Fight Night: Benavidez vs. Figueiredo');
+}
