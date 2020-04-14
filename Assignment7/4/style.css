@@ -1,0 +1,15 @@
+body{
+    margin: 30px;
+}
+div {
+    display: block;
+}
+
+img{
+    height: 100vh;
+    width: 50vw;
+}
+
+#show{
+    display: none;
+}
