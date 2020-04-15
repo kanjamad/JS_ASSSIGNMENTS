@@ -19,26 +19,38 @@
         alert the user to select a state.<br>
         4. If the check box is not selected, alert the user to check the box.</p>
 
-<form action="#" id="registration">
-    <h1>DOM and Event -js Assignments</h1>
+<!-- <form novalidate>
+    <p>
+        <label for="mail">
+            <span>Please enter an email address:</span>
+            <input type="email" id="mail" name="mail" required minlength="8">
+            <span class="error" aria-live="polite"></span>
+        </label>
+    </p>
+    <button>Submit</button>
+</form> -->
 
+
+<form novalidate>
     <p>
         <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname" />
+        <input type="text" id="firstname" name="firstname" required />
+        <span class="error" aria-live="polite"></span>
     </p>
 
     <p>
         <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" />
+        <input type="text" id="lastname" name="lastname"required />
+        <span class="error" aria-live="polite"></span>
     </p>
     
     <p>
-        <input type="radio" id="genderM" name="gender" value="male" />
+        <input type="radio" id="genderM" name="gender" value="male" required/>
         <label for="genderM">Male</label>
     </p>
 
     <p>
-        <input type="radio" id="genderF" name="gender" value="female" />
+        <input type="radio" id="genderF" name="gender" value="female" required/>
         <label for="genderF">Female</label>
     </p>
 
@@ -104,8 +116,9 @@
     </p>
 
     <p>
-        <input type="checkbox" id="accept" value="accept" />
+        <input type="checkbox" id="accept" value="accept" required />
         <label for="accept">:I ACCEPT</label>
+        <span id="myCheck" class="error" aria-live="polite"></span>
     </p>    
 
     <p>
@@ -114,7 +127,10 @@
 
 </form>
 
-<div id="errorMessages"></div>
+<!-- 
+    Note: aria-live attribute is set on that <span> to make sure that our custom error message will be presented to everyone, including it being read out to screenreader users
+
+    -->
 
 
 
