@@ -11,39 +11,22 @@
 <body>
     <h1>JS ASSSIGNMENTS 7  DOM and Event</h1>
     
-<p>
+<p> 2. Have images, p tags, div tags and various other elements on the page. When the page loads, an alert saying "welcome
+to my blog" should pop up.</p>
 
-2. Have images, p tags, div tags and various other elements on the page. When the page loads, an alert saying "welcome
-to my blog" should pop up.<br>
-3. Have several html tags on the page. Have an input button with id hideElems. When this button is clicked all the
-elements on the page should be hidden.<br>
+<div>
+    <h1>My Blog</h1>
+    <h2>Alert Messages</h2>
+    <p>Click on the "x" symbol to close the alert message.</p>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Success!</strong>Indicates a successful or positive action.
+    </div>
+    <img src="th.jpg" alt="Phuket" >
 
-4. Have an input button with id showElems. When this button is double clicked, all the elements on the page should be
-shown.<br>
-5. Have an input button with a id and<br>
-a. when you mouseover this button, the ul elements on the page should be shown.<br>
-b. when you mouseout this button, the ul elements on the page should be hidden.<br>
-6. When page loads, write code to hide elements all the elements with ids "main_one", "main_two" and
-"main_three".<br>
-7. Create 10 check boxes. When you click a button called "Select All" - all the check boxes should be unchecked.<br>
-8. Have called VALIDATE then it should check if the select boxes are selected or NOT. If yes, then alert the TEXT that
-were selected in each of these select boxes. <br>
-9. Have two buttons - "CHECK URL" and "ADD LINK". The button "ADD LINK" to your favorite websites. Now on a click of
-"CHECK URL" button, check to see if "http://www.pro-tekconsulting.com" is included in these 5 anchors tags or not. If
-NO, then enable "ADD LINK" button. When you click on this "ADD LINK" button, Pro-Tek wesbite link should be added to the
-DOM.<br>
-10. Have two divs side by side - lets call them "Form Div" and "View Div".<br>
-a. The first div - "Form Div" should have a simple form with fields - first name, last name, gender, state (select box)
-and "Save" button.<br>
-b. The "View Div" should have a button called "EDIT" - but this button should be hidden by default.<br>
-c. When you click on the "Save" button, the user entered data should appear in the "View Div" - also the form input
-fields should be cleared out (should be empty).<br>
+</div>
 
-d. The View Div should display form data in span tags or p tags or div tags but not as input tags. Also the "EDIT"
-button should now be visible.<br>
-e. When you click on the "EDIT" button, the form should be repopulated with the data so that you can make some changes
-and save again.
-</p>
+
 
 
     <script src="./script.js"></script>
