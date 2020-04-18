@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ASSSIGNMENTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>JS ASSSIGNMENTS 7  DOM and Event</h1>
+    
+<p>
+1. Write a program to convert Fahrenheit temperature to Celsius. Here are the things that needs to be implemented as a
+part of this question:<br>
+a. Ask the input from the user for Fahrenheit using a text field<br>
+b. As soon as the user types in the Fahrenheit number in the text field, the result should display immediately in the
+div below<br>
+c. Hence, there should not be any submit button<br>
+d. Hint: Use onkeyup event. Formula is : C = (F - 32) * 5/9<br>
+e. Don't display the decimal values - but you should accept decimal values from the user<br>
+f. If the user enters any invalid values (strings) ) then you should make the input box border red and prompt user to
+enter correct values<br>
+
+<img src="FToC.png" alt="convert temperature" >
+
+<h2>JavaScript Fahrenheit to Celcius</h2>
+<p>Insert a number into one of the input fields below:</p>
+<p>
+    <input type="number" id="f" onkeyup="covert('F')" > degrees Fahrenheit
+    <span class="error" aria-live="polite"></span>
+</p>
+<p>
+    <input type="number" id="c" onkeyup="covert('C')"> degrees Celcius
+    <span class="error" aria-live="polite"></span>
+</p>
+
+<p>Note that the <b>Math.round()</b> method is used, so that the result will be returned as an integer.</p>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

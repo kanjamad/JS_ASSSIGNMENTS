@@ -44,8 +44,6 @@ lastName.addEventListener('input', function (event) {
     }
 });
 
-// ----------- accept -------
-
 
 
 
@@ -97,6 +95,9 @@ form.addEventListener('submit', function (event) {
         alert('* Please select ACCEPT');
     }
 });
+
+
+// ----------------------- Show error ----------------------------
 
 function showError() {
     if (firstName.validity.valueMissing) {

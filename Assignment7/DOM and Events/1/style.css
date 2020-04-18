@@ -1,0 +1,21 @@
+body{
+    margin: 20px;
+}
+
+
+/* This is our style for the invalid fields */
+input:invalid {
+    border: 1px solid red;
+    background-color: red;
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+    
+}
+
+
+
+
