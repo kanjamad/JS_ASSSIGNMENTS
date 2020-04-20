@@ -28,3 +28,8 @@ body{
     cursor: pointer;
     border-radius: 50%;
 }
+
+
+#first-list{
+    display: none;
+}
