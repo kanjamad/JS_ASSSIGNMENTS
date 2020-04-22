@@ -3,10 +3,10 @@ body{
 }
 
 /* This is our style for the invalid fields */
-input:invalid {
-    border-color: #900;
+/* input:invalid {
+    border-color:red;
     background-color: #FDD;
-}
+} */
 
 input:focus:invalid {
     outline: none;
@@ -18,8 +18,12 @@ input:focus:invalid {
     padding: 0;
     font-size: 80%;
     color:red;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px red;
     box-sizing: border-box;
+    -webkit-border-radius: 0 0 5px 5px red;
+    -moz-border-radius: 0 0 5px 5px red;
+    -ms-border-radius: 0 0 5px 5px red;
+    -o-border-radius: 0 0 5px 5px red;
 }
 
 .error.active {

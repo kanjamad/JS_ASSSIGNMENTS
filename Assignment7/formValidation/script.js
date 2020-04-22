@@ -82,6 +82,7 @@ form.addEventListener('submit', function (event) {
     // If a gender selection was not found
     if (!isChecked) {
         alert('* Please choose your gender');
+        
         // firstNameError.textContent = 'You need to enter your First Name.';
     }
 
@@ -104,12 +105,14 @@ function showError() {
         // If the field is empty
         // display the following error message.
         firstNameError.textContent = 'You need to enter your First Name.';
+        firstName.style.border = "2px solid red";
     } 
     
     if (lastName.validity.valueMissing) {
         // If the field is empty
         // display the following error message.
         lastNameError.textContent = 'You need to enter your Last Name.';
+        lastName.style.border = "2px solid red";
     }
 
     // Set the styling appropriately
